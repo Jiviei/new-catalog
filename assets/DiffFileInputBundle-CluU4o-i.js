@@ -1,0 +1,1 @@
+import{j as n}from"./index--Cfhpedu.js";import{w as t,l as o}from"./index-BnyUbVAE.js";import{m as e}from"./editor.main-Dq_zXivM.js";self.MonacoEnvironment={getWorker(){return null}};o.config({monaco:e});o.init();const a=r=>n.jsx(t,{...r});export{a as default};

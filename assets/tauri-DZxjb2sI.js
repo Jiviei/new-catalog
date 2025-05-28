@@ -1,0 +1,4 @@
+import{I as n}from"./DFPIOError-BdIHcG5c.js";import{c as o,i as c}from"./core-yl-nhWiC.js";const l=["read_file","write_file"],m=async(a,e)=>{switch(a){case"read_file":const r=await fetch(o(e.path,"gramax-fs-stream"));if(r.ok)return await r.arrayBuffer();const t=await r.json();throw new n({name:"IO (gramax-fs-stream / read_file)",code:t.name,message:`${t.name}: ${t.message};
+args: ${JSON.stringify(e,null,4)}`});case"write_file":const i=await fetch(o(e.path,"gramax-fs-stream"),{method:"POST",body:e.content});if(i.ok)return;const s=await i.json();throw new n({name:"IO (gramax-fs-stream / write_file)",code:s.name,message:`${s.name}: ${s.message};
+args: ${JSON.stringify(e,null,4)}`})}},f=async(a,e)=>{try{return await c(`plugin:plugin-gramax-fs|${a}`,e)}catch(r){throw new n({name:`IO (${a})`,code:r.name,message:`${r.name}: ${r.message};
+args: ${JSON.stringify(e,null,4)}`})}},u=async(a,e)=>l.includes(a)?await m(a,e):await f(a,e);export{u as call};

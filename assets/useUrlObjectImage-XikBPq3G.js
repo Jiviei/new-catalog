@@ -1,0 +1,1 @@
+import{r,F as c,b}from"./index--Cfhpedu.js";const l=(e,n=[])=>{const[a,o]=r.useState();return r.useEffect(()=>e?((async()=>{const t=await c.fetch(e);if(!t?.body)return o(null);const s=new Blob([t.body],{type:b(t.body)});o(URL.createObjectURL(s))})(),()=>URL.revokeObjectURL(a)):void 0,[typeof e=="string"?e:e?.toString(),...n]),a};export{l as default};

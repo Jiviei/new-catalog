@@ -1,0 +1,1 @@
+import{p as o,k as a,l as n}from"./index--Cfhpedu.js";const l=t=>r=>{const f=o.join(a.cwd(),t,r),e=n.readFileSync(f),s=e.buffer.slice(e.byteOffset,e.byteOffset+e.byteLength);return Promise.resolve(s)};export{l as loadFontBuffer};

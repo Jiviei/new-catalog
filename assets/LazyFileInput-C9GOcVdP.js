@@ -1,0 +1,2 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./FileInputBundle.js","./index--Cfhpedu.js","./index-DelyD0YF.css","./index-BnyUbVAE.js","./editor.main-Dq_zXivM.js","./editor-GL-q52Lm.css"])))=>i.map(i=>d[i]);
+import{j as e,r,S as s,_ as a}from"./index--Cfhpedu.js";const o=r.lazy(()=>a(()=>import("./FileInputBundle.js"),__vite__mapDeps([0,1,2,3,4,5]),import.meta.url)),n=t=>e.jsx(r.Suspense,{fallback:e.jsx(s,{fullScreen:!0}),children:e.jsx(o,{...t})});export{n as default};

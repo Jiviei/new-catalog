@@ -1,0 +1,1 @@
+import{o as i,i as s,e as c}from"./index--Cfhpedu.js";const l=async(e,a,o,t)=>{await i("done",n=>{const r=n.payload?.replace?.("&from=http://localhost:52054","")?.replace("enterpriseToken=","");s(r,a,o,t)}),await c("http_listen_once",{url:e,redirect:"gramax://",callbackName:"done"})};export{l as default};
